@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-xs-6 col-lg-4" *ngFor="let n of news">
+    <h2>{{n.Title}}</h2>
+    <p>
+    {{n.ShrtDescription}}
+    </p>
+    <p><a class="btn btn-default" href="#" role="button" [routerLink]="['/News',n.NewsID]">مشاهده جزییات »</a></p>
+  </div><!--/.col-xs-6.col-lg-4-->
+
+</div><!--/row-->

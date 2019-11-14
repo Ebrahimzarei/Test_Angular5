@@ -1,0 +1,19 @@
+h1{
+  color: rgb(209, 32, 121);
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.class1{
+  border: 1px solid blue;
+}
+
+.success{
+  padding: 20px;
+  color:green !important;
+}
+
+.danger {
+  padding: 20px;
+  color:red !important;
+}

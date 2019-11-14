@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-xs-6 col-lg-4" *ngFor="let n of news">
+      <h2>{{n.Title}}</h2>
+      <p>
+      {{n.ShrtDescription}}
+      </p>
+      <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+    </div><!--/.col-xs-6.col-lg-4-->
+
+  </div><!--/row-->
+  <nav aria-label="...">
+      <ul class="pagination">
+        <li *ngFor="let n of pagging" [ngClass]="{'active': (pagenumber == n )}"><a [routerLink]="['/News/Page',n]" >{{n}} <span class="sr-only">(current)</span></a></li>
+
+      </ul>
+    </nav>
